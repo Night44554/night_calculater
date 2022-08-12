@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculater</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section>
+       <div class="container">
+          <input type="text" id="cal-input" class="form-control"/>
+        <div class=" btn-group">
+          <button class="btn btn-dark " id="c" onclick="clearall()">C</button>
+          <button class="btn btn-dark " value="(" onclick="clicked(value)">(</button>
+          <button class="btn btn-dark " value=")" onclick="clicked(value)">)</button>
+          <button class="btn btn-dark " onclick="cancel()">&larr;</button>
+        </div> 
+        <div class="btn-group"> 
+            <button class="btn btn-dark"  onclick="clicked(9)">9</button>
+            <button class="btn btn-dark"  onclick="clicked(8)">8</button>
+            <button class="btn btn-dark"  onclick="clicked(7)">7</button>
+            <button class="btn btn-dark"  onclick="clicked('+')">+</button>
+        </div>
+        <div class="btn-group"> 
+            <button class="btn btn-dark"  onclick="clicked(6)">6</button>
+            <button class="btn btn-dark"  onclick="clicked(5)">5</button>
+            <button class="btn btn-dark"  onclick="clicked(4)">4</button>
+            <button class="btn btn-dark"  onclick="clicked('-')">-</button>
+          </div>
+          <div class="btn-group"> 
+            <button class="btn btn-dark" onclick="clicked(3)">3</button>
+            <button class="btn btn-dark" onclick="clicked(2)">2</button>
+            <button class="btn btn-dark" onclick="clicked(1)">1</button>
+            <button class="btn btn-dark" onclick="clicked('*')">*</button>
+          </div>
+          <div class="btn-group"> 
+            <button class="btn btn-dark" onclick="clicked(0)">0</button>
+            <button class="btn btn-dark" onclick="clicked('/')">/</button>
+            <button class="btn btn-dark" onclick="clicked('.')">.</button>
+            <button id="equal" class="btn btn-dark" onclick="equal()">=</button>
+          </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
